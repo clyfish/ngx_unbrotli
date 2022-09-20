@@ -1,3 +1,5 @@
+The `ngx_unbrotli` module is a filter that decompresses responses with `Content-Encoding: br` for clients that do not support `brotli` encoding method.
+
 #### Build
 
 ```bash
