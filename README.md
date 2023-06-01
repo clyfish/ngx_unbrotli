@@ -5,7 +5,7 @@ The `ngx_unbrotli` module is a filter that decompresses responses with `Content-
 ```bash
 ./build_brotli.sh
 cd path/to/nginx-src
-./configure --with-compat --add-dynamic-module=path/to/ngx_unbrotli
+./configure --add-dynamic-module=path/to/ngx_unbrotli
 make modules
 cp objs/ngx_http_unbrotli_filter_module.so path/to/nginx/modules
 ```

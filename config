@@ -1,9 +1,9 @@
-BROTLI_DIR=~/local/brotli
+BROTLI_DIR=/usr/local/brotli
 ngx_module_type=HTTP_FILTER
 ngx_module_name=ngx_http_unbrotli_filter_module
 ngx_module_incs="$BROTLI_DIR/include"
 ngx_module_srcs="$ngx_addon_dir/ngx_http_unbrotli_filter_module.c"
-ngx_module_libs="$BROTLI_DIR/lib64/libbrotlidec-static.a $BROTLI_DIR/lib64/libbrotlicommon-static.a"
+ngx_module_libs="$BROTLI_DIR/lib/libbrotlidec.a $BROTLI_DIR/lib/libbrotlicommon.a"
 
 . auto/module
 

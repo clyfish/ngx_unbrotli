@@ -7,5 +7,5 @@ cd brotli || exit 1
 rm -r out
 mkdir out
 cd out
-cmake3 -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=~/local/brotli ..
-cmake3 --build . --config Release --target install
+cmake -DBUILD_SHARED_LIBS=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local/brotli ..
+cmake --build . --config Release --target install
